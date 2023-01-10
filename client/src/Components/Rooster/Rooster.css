@@ -1,0 +1,173 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.centerText{
+    text-align: center;
+}
+.absolute{
+    position: absolute;
+    width: 100%;
+}
+.lineMarkerHorizontaal{
+     border: 1px dashed gray;
+     width: 98%;
+     height: 0px;
+
+ }
+.lineMarkerVerticaal{
+    position: sticky;
+    top:0;
+    border: 1px dashed gray;
+    height: 50px;
+    width: 0px;
+}
+
+.DagField{
+    border-style:solid ;
+    border-width: 2px 1.5px 2px 1.5px;
+    border-color: var(--lijnen);
+    position:relative;
+    background: white;
+
+}
+
+
+.roosterItem{
+    background:var(--accentColor);
+    border-radius:15px;
+    cursor: pointer;
+}
+
+.noOverflow{
+    max-height: 100%;
+    overflow: hidden;
+}
+.scrolOverflow{
+    overflow-y: auto;
+}
+
+.WeekKiezer{
+    margin: 10px;
+}
+.WeekKiezer > *{
+    margin: auto 10px;
+    justify-content: center
+}
+
+.fullDiv{
+    height: 100%;
+}
+
+.popUp{
+    width: 90vw;
+    height: 85vh;
+    left: 5vw;
+    top:5vh;
+    z-index: 3;
+    position: fixed;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+}
+
+
+.isideItem{
+    box-sizing:border-box;
+    padding: 5px 10px;
+    height: 100%;
+}
+.noMargin{
+    margin: 0 0;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    margin-left: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.roosterVelden .row{
+    width: 100%;
+}
+.dagTitles{
+    padding-left: 50px;
+    padding-right: 7px;
+    transition-delay:0.5s ;
+}
+
+.rooster{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.roosterVelden{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: min-content;
+    padding: 15px 0px;
+    min-width: 1385px;
+}
+
+.dagTijden >:first-child .DagField{
+   border-radius: 10px 0px 0px 10px;
+    border-width: 2px 1.5px 2px 2px;
+}
+
+.dagTijden >:last-child .DagField{
+    border-radius: 0px 10px 10px 0px;
+    border-width: 2px 2px 2px 1.5px;
+}
+
+
+
+.dag{
+    display: flex;
+    min-width: 300px;
+}
+.dag > div{
+    flex: 1 0 190px;
+}
+.verticaalDag{
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* width */
+.roosterVelden::-webkit-scrollbar {
+     width: 7px;
+     height: 7px;
+ }
+.roosterVelden::-webkit-scrollbar-button{
+    height: 5px;
+}
+/* Track */
+.roosterVelden::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background:grey ;
+}
+
+/* Handle */
+.roosterVelden::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.roosterVelden::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+

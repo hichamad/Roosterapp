@@ -1,0 +1,19 @@
+{
+  "Notifs" : [
+    {
+      "id" : "1",
+      "person" : "John Magellan",
+      "messageType" : "3"
+    },
+    {
+      "id" : "2",
+      "person" : "Hendrik Groen",
+      "messageType" : "2"
+    },
+    {
+      "id" : "3",
+      "person" : "Duikbroek Verheemst",
+      "messageType" : "1"
+    }
+  ]
+}
